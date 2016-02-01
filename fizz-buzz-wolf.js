@@ -3,15 +3,19 @@
  */
 //"Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”."
 
-//My thought...not working
+//My thought...now working definitely not DRY
 for(var i = 1; i <= 105; i++) {
-    if (i % 3 == 0) {
-        console.log("Fizz");
-    } else if (i % 5 == 0) {
-        console.log("Buzz");
+    if (i % 105 == 0) {
+    console.log("FizzBuzzWolf");
+    } else if (i % 15 == 0) {
+        console.log("FizzBuzz")
     } else if (i % 7 == 0) {
         console.log("Wolf")
-    } else {
+    } else if (i % 5 == 0) {
+        console.log("Buzz");
+    } else if (i % 3 == 0) {
+        console.log("Fizz");
+    }  else {
         console.log(i);
     }
 }
@@ -35,4 +39,5 @@ console.log(
         if (isWolf) return 'Wolf';
         return(nb);
     }).join("\n"));
+
 
