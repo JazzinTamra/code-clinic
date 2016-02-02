@@ -3,6 +3,28 @@
  */
 //"Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For multiples of 7 print "Wolf" For numbers which are multiples of both three and five print “FizzBuzz”. And multiples of 3,5 & 7 print "FizzBuzzWolf"
 
+//How would I add strings to get the answer? I don't know how to pass i if Fizz Buzz and Woof are used.
+
+for(var i = 1; i <= 105; i++) {
+    var str="";
+    if (i % 3 == 0) {
+        str += "Fizz"
+    }
+    if (i % 5 == 0) {
+        str += "Buzz"
+    }
+    if (i % 7 == 0) {
+        str += "Woof"
+    }
+    if(str.indexOf("Fizz") || str.indexOf("Buzz") || str.indexOf("Woof") !== -1) {
+        console.log(str);
+    }
+    if(str.indexOf("Fizz") && str.indexOf("Buzz") && str.indexOf("Woof") !== 0) {
+        console.log(i);
+    }
+}
+
+
 ////My thought...now working definitely not DRY
 //for(var i = 1; i <= 105; i++) {
 //    if (i % 105 == 0) {
@@ -43,7 +65,8 @@
 
 //How would I add strings to get the answer? I don't know how to pass i if Fizz Buzz and Woof are used.
 
-for(var i = 1; i <= 105; i++) { var str="";
+for(var i = 1; i <= 105; i++) {
+    var str="";
     if (i % 3 == 0) {
         str += "Fizz"
     }
@@ -52,9 +75,11 @@ for(var i = 1; i <= 105; i++) { var str="";
     }
     if (i % 7 == 0) {
         str += "Woof"
-    } if(str.indexOf("Fizz") || str.indexOf("Buzz") || str.indexOf("Woof") !== -1) {
+    }
+    if(str.indexOf("Fizz") || str.indexOf("Buzz") || str.indexOf("Woof") !== -1) {
         console.log(str);
-    } else {
+    }
+    if(str.indexOf("Fizz") && str.indexOf("Buzz") && str.indexOf("Woof") !== 0) {
         console.log(i);
     }
 }
