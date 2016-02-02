@@ -28,11 +28,13 @@ var computerChoice = Math.floor((Math.random()*9)+1);
 console.log(computerChoice);
 
 
+
 //the results
 var theResults = function compare(user, computer) {
     var user = userChoice;
-    //var user = "paper";
     var computer = computerChoice;
+    //var user = "paper";
+
     //var computer = "rock";
     if (user === computer) {
         return "It's a tie.";
