@@ -8,11 +8,11 @@
 for(var i = 1; i <= 105; i++) {
     var str="";
     if (i % 3 === 0) {
-        str += "Fizz"
+        str += "Fizz";
     } if (i % 5 === 0) {
-        str += "Buzz"
+        str += "Buzz";
     } if (i % 7 === 0) {
-        str += "Woof"
+        str += "Woof";
     } if(str.indexOf("Fizz") || str.indexOf("Buzz") || str.indexOf("Woof") !== -1) {
         console.log(str);
     } if(str.indexOf("Fizz") && str.indexOf("Buzz") && str.indexOf("Woof") !== 0) {
@@ -22,21 +22,21 @@ for(var i = 1; i <= 105; i++) {
 
 
 ////My thought...now working definitely not DRY
-//for(var i = 1; i <= 105; i++) {
-//    if (i % 105 == 0) {
-//    console.log("FizzBuzzWolf");
-//    } else if (i % 15 == 0) {
-//        console.log("FizzBuzz")
-//    } else if (i % 7 == 0) {
-//        console.log("Wolf")
-//    } else if (i % 5 == 0) {
-//        console.log("Buzz");
-//    } else if (i % 3 == 0) {
-//        console.log("Fizz");
-//    }  else {
-//        console.log(i);
-//    }
-//}
+for(var i = 1; i <= 105; i++) {
+    if (i % 105 === 0) {
+    console.log("FizzBuzzWolf");
+    } else if (i % 15 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 7 === 0) {
+        console.log("Wolf");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    }  else {
+        console.log(i);
+    }
+}
 ////More thoughts after look at answers on the web
 //console.log(
 //    for(var i = 1; i <= 150; i++) {
